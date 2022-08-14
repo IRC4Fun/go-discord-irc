@@ -239,7 +239,7 @@ func (m *IRCManager) HandleUser(user DiscordUser) {
 		messages:         make(chan IRCMessage),
 		manager:          m,
 		pmNoticedSenders: make(map[string]struct{}),
-		quitMessage:      fmt.Sprintf("Offline for %s", m.bridge.Config.CooldownDuration),
+		quitMessage:      fmt.Sprintf("Left server or is offline", m.bridge.Config.CooldownDuration),
 	}
 
 	m.ircConnections[user.ID] = con
