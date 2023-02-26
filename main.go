@@ -118,7 +118,7 @@ func main() {
 	viper.SetDefault("cooldown_duration", int64((time.Hour * 24).Seconds()))
 	cooldownDuration := viper.GetInt64("cooldown_duration")
 	//
-	viper.SetDefault("show_joinquit", false)
+	viper.SetDefault("show_joinquit", true)
 	showJoinQuit := viper.GetBool("show_joinquit")
 	// Maximum length of user nicks aloud
 	viper.SetDefault("max_nick_length", ircnick.MAXLENGTH)
