@@ -217,8 +217,7 @@ func (m *IRCManager) HandleUser(user DiscordUser) {
 
 	var ip string
 	{
-//		baseip := "fd75:f5f5:226f:"
-		baseip := "gateway:Discord:"
+		baseip := "fd75:f5f5:226f:"
 		if user.Bot {
 			baseip += "2"
 		} else {
